@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+  </head>
+  <body>
+
+    <div id="headline">
+      
+    </div>
+
+    <script>
+
+      // Array of farm animals.
+      var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
+
+      
+      // Print all of the animals using a for-loop.
+      
+      for (var i = 0; i < myFarm.length; i++) {
+        
+        console.log(myFarm[i]);
+      }
+
+      // Determine what animals start with an O or a C.
+
+      for (var i = 0; i < myFarm.length; i++) {
+
+        if ((myFarm[i].charAt(0) === "c") || (myFarm[i].charAt(0) === "o")) {
+        
+        console.log(myFarm[i] + " Starts with o or c"); 
+
+        }
+      }
+
+      // Test the method 
+
+      var something = "text";
+      console.log (something.charAt(0));
+  
+
+      var myElement = document.getElementById("headline");
+
+      document.onkeyup = function() {
+        myElement.textContent = "New Content";
+      };
+
+      // document.onkeyup = function() {
+      //   myElement.textContent = event.key;
+      // };
+
+     
+
+    
+
+
+
+// FUNCTION
+
+    // var drinks = ["coke", "Pepsi", "Water"];
+    // var food = ["pizza", "apple", "nuts"];
+
+    // function logArray (list) {
+    //   for (var i = 0; i < list.length; i++) {
+    //     console.log(i);
+    //     console.log(list[i]);
+    //    }
+    //   }
+      
+    //   logArray(drinks);
+    //   logArray(food);
+
+
+
+
+
+
+    </script>
+    
+  </body>
+</html>
